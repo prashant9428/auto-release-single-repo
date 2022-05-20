@@ -4,20 +4,10 @@ on:
   push:
     branches:
       - development
-    paths:
-      - server/**
 
 env:
   AWS_REGION: ap-south-1
-  ECR_REPOSITORY: microservices-ums-image
-  IMAGE_NAME: microservices-ums-image
-  ECS_SERVICE: development-ums-service
-  ECS_CLUSTER: development-locus-ecs-cluster
-  ECS_TASK_DEFINITION: development-ums-td
-  CONTAINER_NAME: development-ums-container
-  COMMIT: 0
-  TAG: 0
-  SCHEMA_DIRECTORY: ums
+  
 jobs:
   build:
     name: semantic release
