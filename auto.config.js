@@ -9,9 +9,9 @@ module.exports = {
     "noChangelog": false,
     "onlyGraduateWithReleaseLabel": true
   },
-  "release":{
-    
-    "prerelease": false,
-   
-  }
+  "plugins": [
+    "npm",
+    "conventional-commits",
+    "git-tag"
+  ]
 }
