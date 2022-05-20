@@ -52,6 +52,7 @@ jobs:
           git config user.name "${{ secrets.GH_ADMIN_USERNAME }}"
           git config user.email "${{ secrets.GH_ADMIN_EMAIL }}"
           git remote set-url origin https://${{secrets.GH_ADMIN_USERNAME}}:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY
+          auto canary
           auto release      
         env: 
           GH_TOKEN: ${{ secrets.GH_ADMIN_TOKEN }}
