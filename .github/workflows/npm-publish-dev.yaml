@@ -45,33 +45,16 @@ jobs:
 
       - run: |
           
-          npm i -g auto  
+          npm i -g auto
+          npm i -g @auto-it/conventional-commits
           export GH_TOKEN=${{secrets.GH_ADMIN_TOKEN}}      
           git config user.name "${{ secrets.GH_ADMIN_USERNAME }}"
           git config user.email "${{ secrets.GH_ADMIN_EMAIL }}"
           git remote set-url origin https://${{secrets.GH_ADMIN_USERNAME}}:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY
-
-          PACKAGE_CHANGE=$(lerna changed  --ndjson)
-          echo $PACKAGE_CHANGE
-
-          npx lerna version --conventional-commits --conventional-prerelease --preid beta --yes --force-git-tag --no-changelog 
-          
-          echo "---running sh started----"
-
-          for item in $PACKAGE_CHANGE
-          do
-            location=$(echo $item | grep -o '"location":"[^"]*' | grep -o '[^"]*$')
-            echo "${location}"
-            cd "${location}"
-            
-            PACKAGE_NAME=$(node -p -e "require('./package.json').name")
-            VERSION=$(node -p -e "require('./package.json').version")
-            NODE_VERSION="${PACKAGE_NAME}@${VERSION}"
-            
-            
-          done
-          echo "---running sh stopped----"
-          
+          branch=development
+          auto version
+          git push --follow-tags --set-upstream origin $branch
+          auto release      
         env: 
           GH_TOKEN: ${{ secrets.GH_ADMIN_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GH_ADMIN_TOKEN }}

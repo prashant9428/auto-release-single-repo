@@ -44,7 +44,8 @@ jobs:
           registry-url: https://npm.pkg.github.com/
 
       - run: |
-          npm i -g auto  
+          npm i -g auto
+          npm i -g @auto-it/conventional-commits
           export GH_TOKEN=${{secrets.GH_ADMIN_TOKEN}}      
           git config user.name "${{ secrets.GH_ADMIN_USERNAME }}"
           git config user.email "${{ secrets.GH_ADMIN_EMAIL }}"
