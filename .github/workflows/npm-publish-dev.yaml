@@ -45,9 +45,9 @@ jobs:
 
       - run: |
           
-          npm i -g auto
-          npm i -g @auto-it/git-tag
-          npm i -g @auto-it/conventional-commits
+          npm i -g auto@10.32.6
+          npm i -g @auto-it/git-tag@10.32.6
+          npm i -g @auto-it/conventional-commits@10.32.6
           export GH_TOKEN=${{secrets.GH_ADMIN_TOKEN}}      
           git config user.name "${{ secrets.GH_ADMIN_USERNAME }}"
           git config user.email "${{ secrets.GH_ADMIN_EMAIL }}"
