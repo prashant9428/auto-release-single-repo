@@ -1,79 +1,37 @@
-name: npackages-publish-prod
 
+name: dev-ums
 on:
-  pull_request:
-    branches: 
+  push:
+    branches:
       - main
-    types: [closed]
-      
+
 env:
-  version: 0
-
+  AWS_REGION: ap-south-1
+  
 jobs:
-  semantic-release:
+  build:
+    name: semantic release
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: none 
-      issues: write
-      packages: write
+    environment: main
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout branch "main"
+        uses: actions/checkout@v2
         with:
-          persist-credentials: false
-          ref: 'main'
+          ref: "main"
           fetch-depth: 0
-          token: ${{secrets.GH_ADMIN_TOKEN}}
 
-      # - name: Configure AWS credentials
-      #   uses: aws-actions/configure-aws-credentials@v1
-      #   with:
-      #     aws-access-key-id: ${{ secrets.DEV_AWS_ACCESS_KEY }}
-      #     aws-secret-access-key: ${{ secrets.DEV_AWS_SECRET_KEY }}
-      #     aws-region: ap-south-1
-          
-      # - name: Secrets from aws parameter store
+      # - name: semantic configuration
       #   run: |
-      #       aws ssm get-parameters --names /development/NPMRC --with-decryption --output text --query "Parameters[*].Value" > .npmrc
-      #       ls
-      #       cat .npmrc
-      - name: Environment intlialize and publish
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14
-          registry-url: https://npm.pkg.github.com/
-
-      - run: |
-          npm i -g auto
-          npm i -g @auto-it/conventional-commits
-          export GH_TOKEN=${{secrets.GH_ADMIN_TOKEN}}      
-          git config user.name "${{ secrets.GH_ADMIN_USERNAME }}"
-          git config user.email "${{ secrets.GH_ADMIN_EMAIL }}"
-          git remote set-url origin https://${{secrets.GH_ADMIN_USERNAME}}:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY
-
-          PACKAGE_CHANGE=$(lerna changed  --ndjson)
-          echo $PACKAGE_CHANGE
-
-          npx lerna version --conventional-commits --conventional-graduate --yes --force-git-tag --no-changelog
-        
-          
-          echo "---running sh started----"
-
-          for item in $PACKAGE_CHANGE
-          do
-            location=$(echo $item | grep -o '"location":"[^"]*' | grep -o '[^"]*$')
-            echo "${location}"
-            cd "${location}"
-            
-            PACKAGE_NAME=$(node -p -e "require('./package.json').name")
-            VERSION=$(node -p -e "require('./package.json').version")
-            NODE_VERSION="${PACKAGE_NAME}@${VERSION}"
-            auto release --use-version $NODE_VERSION --base-branch "main"
-
-          done
-          echo "---running sh stopped----"
- 
-        env: 
-          GH_TOKEN: ${{ secrets.GH_ADMIN_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GH_ADMIN_TOKEN }}
-          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+      #     cat > release.config.js <<- "EOF"
+      #       module.exports={"branches":["development"],
+      #       "repositoryUrl":"https://github.com/byjus-orders/microservices-ums",
+      #       "plugins":[
+      #         "@semantic-release/commit-analyzer",
+      #         "@semantic-release/release-notes-generator",
+      #         "@semantic-release/github"]}
+      - name: create a release
+        run: |
+          npm i
+          npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
