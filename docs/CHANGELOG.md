@@ -1,4 +1,23 @@
+## [1.1.1-beta.1](https://github.com/prashant9428/auto-release-single-repo/compare/v1.1.0...v1.1.1-beta.1) (2022-05-23)
+
+
+### Bug Fixes
+
+* a new config change ([672a560](https://github.com/prashant9428/auto-release-single-repo/commit/672a560f00682ada294bbc49ed452eea780508c7))
+* added space in the index.js ([a9135f5](https://github.com/prashant9428/auto-release-single-repo/commit/a9135f555dbf7b05e3821237485b7089f1a603ce))
+* changed the tag ([8c022cf](https://github.com/prashant9428/auto-release-single-repo/commit/8c022cf4c8e6fc93d4a205a38a912ea952279cf2))
+* changed the tag ([a1c6784](https://github.com/prashant9428/auto-release-single-repo/commit/a1c6784871b78c794bb655a592abaf95ac21112f))
+* changed the tag ([1538ee1](https://github.com/prashant9428/auto-release-single-repo/commit/1538ee12dc7228651ffeda90b037c1755f4a8221))
+* updated config ([79c6637](https://github.com/prashant9428/auto-release-single-repo/commit/79c66373f9efdd2dfab778a6820232300322cf1a))
+* updated config ([94f1e7a](https://github.com/prashant9428/auto-release-single-repo/commit/94f1e7a490daa138923cd12ff2f0ee9547943700))
+* updated config ([71d0a3c](https://github.com/prashant9428/auto-release-single-repo/commit/71d0a3c4704f654fb6063f1701a98802e5382fe2))
+* updated config ([8f6b93b](https://github.com/prashant9428/auto-release-single-repo/commit/8f6b93b3432a1a1c49cfd76fbe655955462cb007))
+* updated package ([7e78a8c](https://github.com/prashant9428/auto-release-single-repo/commit/7e78a8c877f8bfdbd4a01060e62a6c9caf21eeff))
+
 # [1.1.0](https://github.com/prashant9428/auto-release-single-repo/compare/v1.0.1...v1.1.0) (2022-05-23)
+
+# [1.1.0-development.4](https://github.com/prashant9428/auto-release-single-repo/compare/v1.1.0-development.3...v1.1.0-development.4) (2022-05-23)
+
 
 
 ### Bug Fixes
@@ -10,6 +29,21 @@
 ### Features
 
 * added space in the index ([c544e58](https://github.com/prashant9428/auto-release-single-repo/commit/c544e580bb04538a928f80c5295736e031d4d4b7))
+* added space in the index.js ([a9135f5](https://github.com/prashant9428/auto-release-single-repo/commit/a9135f555dbf7b05e3821237485b7089f1a603ce))
+* changed the tag ([a1c6784](https://github.com/prashant9428/auto-release-single-repo/commit/a1c6784871b78c794bb655a592abaf95ac21112f))
+* changed the tag ([1538ee1](https://github.com/prashant9428/auto-release-single-repo/commit/1538ee12dc7228651ffeda90b037c1755f4a8221))
+* updated config ([79c6637](https://github.com/prashant9428/auto-release-single-repo/commit/79c66373f9efdd2dfab778a6820232300322cf1a))
+* updated config ([94f1e7a](https://github.com/prashant9428/auto-release-single-repo/commit/94f1e7a490daa138923cd12ff2f0ee9547943700))
+* updated config ([71d0a3c](https://github.com/prashant9428/auto-release-single-repo/commit/71d0a3c4704f654fb6063f1701a98802e5382fe2))
+
+# [1.1.0-development.3](https://github.com/prashant9428/auto-release-single-repo/compare/v1.1.0-development.2...v1.1.0-development.3) (2022-05-23)
+
+
+### Bug Fixes
+
+* a new config change ([672a560](https://github.com/prashant9428/auto-release-single-repo/commit/672a560f00682ada294bbc49ed452eea780508c7))
+* updated config ([8f6b93b](https://github.com/prashant9428/auto-release-single-repo/commit/8f6b93b3432a1a1c49cfd76fbe655955462cb007))
+
 
 # [1.1.0-development.2](https://github.com/prashant9428/auto-release-single-repo/compare/v1.1.0-development.1...v1.1.0-development.2) (2022-05-23)
 
