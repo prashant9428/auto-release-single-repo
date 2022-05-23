@@ -5,6 +5,9 @@ module.exports = {
         "@semantic-release/commit-analyzer",
         "@semantic-release/release-notes-generator",
         "@semantic-release/github",
+        ["@semantic-release/npm", {
+          "npmPublish": false,
+        }],
         [
             "@semantic-release/changelog",
             {
@@ -14,7 +17,7 @@ module.exports = {
           [
             "@semantic-release/git",
             {
-              "assets": ["docs/CHANGELOG.md"]
+              "assets": ["package.json","docs/CHANGELOG.md"]
             }
           ]]
 
