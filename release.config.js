@@ -1,5 +1,5 @@
 module.exports = {
-  "branches": ['+([0-9])?(.{+([0-9]),x}).x', 'main', { name: 'beta', prerelease: true }],
+  "branches": ['main', { name: 'development', prerelease: true }],
   "repositoryUrl": "https://github.com/prashant9428/auto-release-single-repo",
   "plugins": [
     "@semantic-release/commit-analyzer",
