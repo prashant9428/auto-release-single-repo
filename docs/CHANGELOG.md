@@ -1,3 +1,10 @@
+# [1.1.0-development.2](https://github.com/prashant9428/auto-release-single-repo/compare/v1.1.0-development.1...v1.1.0-development.2) (2022-05-23)
+
+
+### Bug Fixes
+
+* added user profile ([6493d97](https://github.com/prashant9428/auto-release-single-repo/commit/6493d97edec19e651a6fd00484fa3caeeecc1178))
+
 # [1.1.0-development.1](https://github.com/prashant9428/auto-release-single-repo/compare/v1.0.1...v1.1.0-development.1) (2022-05-23)
 
 
