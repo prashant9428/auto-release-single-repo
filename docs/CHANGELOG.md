@@ -1,3 +1,10 @@
+# [1.1.0-development.3](https://github.com/prashant9428/auto-release-single-repo/compare/v1.1.0-development.2...v1.1.0-development.3) (2022-05-23)
+
+
+### Bug Fixes
+
+* a new config change ([672a560](https://github.com/prashant9428/auto-release-single-repo/commit/672a560f00682ada294bbc49ed452eea780508c7))
+* updated config ([8f6b93b](https://github.com/prashant9428/auto-release-single-repo/commit/8f6b93b3432a1a1c49cfd76fbe655955462cb007))
 
 # [1.1.0-development.2](https://github.com/prashant9428/auto-release-single-repo/compare/v1.1.0-development.1...v1.1.0-development.2) (2022-05-23)
 
