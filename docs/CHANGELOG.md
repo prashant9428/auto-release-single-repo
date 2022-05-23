@@ -1,3 +1,10 @@
+## [1.1.2-beta.1](https://github.com/prashant9428/auto-release-single-repo/compare/v1.1.1...v1.1.2-beta.1) (2022-05-23)
+
+
+### Bug Fixes
+
+* added a new line into the index.js ([58738ed](https://github.com/prashant9428/auto-release-single-repo/commit/58738edca4f4ee11d605da73ce5fe4c596d79321))
+
 ## [1.1.1](https://github.com/prashant9428/auto-release-single-repo/compare/v1.1.0...v1.1.1) (2022-05-23)
 
 
