@@ -1,3 +1,12 @@
+## [1.0.1](https://github.com/prashant9428/auto-release-single-repo/compare/v1.0.0...v1.0.1) (2022-05-23)
+
+
+### Bug Fixes
+
+* added a space ([0464fe2](https://github.com/prashant9428/auto-release-single-repo/commit/0464fe2f73751a2e2d7e4a6bdbf38d406c3a065f))
+* added a space ([87554d7](https://github.com/prashant9428/auto-release-single-repo/commit/87554d75fb51d5ce5fa5097584c24cdd4ac414d3))
+* updated the version config ([e761d13](https://github.com/prashant9428/auto-release-single-repo/commit/e761d139fe23c98ead9eb8e841e59474b7682706))
+
 # 1.0.0 (2022-05-20)
 
 
