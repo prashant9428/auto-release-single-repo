@@ -1,5 +1,5 @@
 module.exports = {
-  "branches": ['main', { name: 'development', prerelease: true }],
+  "branches": ['main', { name: 'development', prerelease: 'beta' }],
   "repositoryUrl": "https://github.com/prashant9428/auto-release-single-repo",
   "plugins": [
     "@semantic-release/commit-analyzer",
