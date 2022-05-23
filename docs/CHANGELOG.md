@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/prashant9428/auto-release-single-repo/compare/v1.0.1...v1.1.0) (2022-05-23)
+
+
+### Bug Fixes
+
+* added user profile ([6493d97](https://github.com/prashant9428/auto-release-single-repo/commit/6493d97edec19e651a6fd00484fa3caeeecc1178))
+* changed default to dev ([2e6fcfa](https://github.com/prashant9428/auto-release-single-repo/commit/2e6fcfa49177bc580900e7087a22292981012e74))
+
+
+### Features
+
+* added space in the index ([c544e58](https://github.com/prashant9428/auto-release-single-repo/commit/c544e580bb04538a928f80c5295736e031d4d4b7))
 
 # [1.1.0-development.2](https://github.com/prashant9428/auto-release-single-repo/compare/v1.1.0-development.1...v1.1.0-development.2) (2022-05-23)
 
