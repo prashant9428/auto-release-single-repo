@@ -32,6 +32,7 @@ jobs:
       - name: create a release
         run: |
           npm i
-          npx semantic-release --tag-format='v${version}'
+          # npx semantic-release --tag-format='v\\${version}'
+          npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
