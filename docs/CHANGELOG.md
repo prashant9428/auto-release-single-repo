@@ -1,3 +1,11 @@
+## [1.2.4](https://github.com/prashant9428/auto-release-single-repo/compare/v1.2.3...v1.2.4) (2022-05-24)
+
+
+### Bug Fixes
+
+* added changelog install in pipeline ([bb1aa83](https://github.com/prashant9428/auto-release-single-repo/commit/bb1aa8337a40cc59f2e9d65d8b50bd25c68d3607))
+* added changelog install in pipeline ([4f99ead](https://github.com/prashant9428/auto-release-single-repo/commit/4f99ead3353a6e460d2eeb1aa0e56cd8edae3dcb))
+
 ## [1.2.4-beta.1](https://github.com/prashant9428/auto-release-single-repo/compare/v1.2.3...v1.2.4-beta.1) (2022-05-24)
 
 
