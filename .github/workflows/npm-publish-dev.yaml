@@ -34,6 +34,10 @@ jobs:
           npm i
           # npx semantic-release --tag-format='v\\${version}'
           npx semantic-release
+          
+          git config user.name "${{ secrets.GH_ADMIN_USERNAME }}"
+          git config user.email "${{ secrets.GH_ADMIN_EMAIL }}"
+          git remote set-url origin https://${{secrets.GH_ADMIN_USERNAME}}:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY
           git add .
           git commit -m"changelog and package.json release[skip ci]"
           git push
