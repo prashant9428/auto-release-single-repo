@@ -1,3 +1,10 @@
+## [1.2.1-beta.2](https://github.com/prashant9428/auto-release-single-repo/compare/v1.2.1-beta.1...v1.2.1-beta.2) (2022-05-24)
+
+
+### Bug Fixes
+
+* updated pipeline ([8dea14d](https://github.com/prashant9428/auto-release-single-repo/commit/8dea14d80637363385f2fa2dc6ef8ea6845f8eae))
+
 # [1.2.0](https://github.com/prashant9428/auto-release-single-repo/compare/v1.1.2...v1.2.0) (2022-05-24)
 
 
