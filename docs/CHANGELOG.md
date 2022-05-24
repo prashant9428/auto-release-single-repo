@@ -1,3 +1,10 @@
+# [1.2.0-beta.1](https://github.com/prashant9428/auto-release-single-repo/compare/v1.1.2...v1.2.0-beta.1) (2022-05-24)
+
+
+### Features
+
+* added a new user profile ([fdfbd58](https://github.com/prashant9428/auto-release-single-repo/commit/fdfbd58ef67031f40e35e8ea6951d3988c8f37a0))
+
 ## [1.1.2](https://github.com/prashant9428/auto-release-single-repo/compare/v1.1.1...v1.1.2) (2022-05-23)
 
 
