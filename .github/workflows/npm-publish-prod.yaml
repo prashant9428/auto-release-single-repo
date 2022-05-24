@@ -31,6 +31,7 @@ jobs:
       #         "@semantic-release/github"]}
       - name: create a release
         run: |
+          npm i -g semantic-release
           npm i -g @semantic-release/changelog
           npx semantic-release
 
