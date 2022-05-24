@@ -1,3 +1,10 @@
+## [1.2.2-beta.1](https://github.com/prashant9428/auto-release-single-repo/compare/v1.2.1...v1.2.2-beta.1) (2022-05-24)
+
+
+### Bug Fixes
+
+* added a git push config ([5c51abc](https://github.com/prashant9428/auto-release-single-repo/commit/5c51abc4b2912e4c7d84f9db1ab2af690d172862))
+
 ## [1.2.1-beta.2](https://github.com/prashant9428/auto-release-single-repo/compare/v1.2.1-beta.1...v1.2.1-beta.2) (2022-05-24)
 
 
