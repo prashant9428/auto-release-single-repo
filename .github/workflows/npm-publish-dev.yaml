@@ -9,8 +9,8 @@ env:
   AWS_REGION: ap-south-1
   
 jobs:
-  build:
-    name: semantic release
+  semantic-release:
+    name: semantic_release
     runs-on: ubuntu-latest
     environment: development
     steps:
@@ -39,7 +39,21 @@ jobs:
           git config user.email "${{ secrets.GH_ADMIN_EMAIL }}"
           git remote set-url origin https://${{secrets.GH_ADMIN_USERNAME}}:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY
           git add .
-          git commit -m"changelog and package.json release[skip ci]"
+          git commit -m"changelog and package.json release[skip ci]
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+  deployment:
+    if: always()
+    needs:  semantic-release
+    name: deployment
+    runs-on: ubuntu-latest
+    environment: development
+    steps:
+      - name: just logging
+        run: |
+            echo "working"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
