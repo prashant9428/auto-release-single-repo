@@ -6,7 +6,7 @@ module.exports = {
     "@semantic-release/release-notes-generator",
     "@semantic-release/github",
     ["@semantic-release/npm", {
-      "pkgRoot": ["server"],
+      "pkgRoot": "server",
       "npmPublish": false,
     }],
     [
