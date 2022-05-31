@@ -58,13 +58,10 @@ jobs:
         id: build-image
         run: |
           if [ 1 != "" ]; then
-          echo "::set-output imagetag=1.2"
+            echo "::set-output imagetag=$(date +%Y-%m-%d-%H%M%S)"
           else
-          echo "::set-output imagetag=$(date +%Y-%m-%d-%H%M%S)"
+            echo "::set-output imagetag=$(date +%Y-%m-%d-%H%M%S)"
           fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: log image
         run: |
          echo ${{ steps.build-image.outputs.imagetag }}
