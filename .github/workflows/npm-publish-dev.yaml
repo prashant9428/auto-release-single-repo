@@ -57,13 +57,13 @@ jobs:
     steps:
       - name: mute the datadog alert monitor
         run: |
-        
-        response=$(curl --header 'Content-Type: application/json' --header 'DD-API-KEY: ${{ secrets.DD_API_KEY }}' --header 'DD-APPLICATION-KEY: ${{ secrets.DD_APPLICATION_KEY }}' -s -i https://api.datadoghq.com/api/v1/monitor/${{env.DEV_MONITOR_ID}}/mute)
+       
+          response=$(curl --header 'Content-Type: application/json' --header 'DD-API-KEY: ${{ secrets.DD_API_KEY }}' --header 'DD-APPLICATION-KEY: ${{ secrets.DD_APPLICATION_KEY }}' -s -i https://api.datadoghq.com/api/v1/monitor/${{env.DEV_MONITOR_ID}}/mute)
         # curl --location --request POST "https://api.datadoghq.com/api/v1/monitor/${{env.DEV_MONITOR_ID}}/mute" \
         # --header "Content-Type: application/json" \
         # --header "DD-API-KEY: ${{ secrets.DD_API_KEY }}" \
         # --header "DD-APPLICATION-KEY: ${{ secrets.DD_APPLICATION_KEY }}"
-        echo $response
+          echo $response
 
       - name: just logging
         id: image
