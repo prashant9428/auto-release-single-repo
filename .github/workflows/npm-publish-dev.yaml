@@ -68,3 +68,4 @@ jobs:
       - name: log image
         run: |
          echo "${{steps.build-image.outputs.image_tag}}"
+         echo "working"
