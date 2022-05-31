@@ -55,14 +55,14 @@ jobs:
     environment: development
     steps:
       - name: just logging
-        id: build-image
+        id: image
         run: |
           if [ 1 != "" ]; then
-            echo "::set-output imagetag=$(date +%Y-%m-%d-%H%M%S)"
+            echo "::set-output name=imagetag::1.22"
           else
-            echo "::set-output imagetag=$(date +%Y-%m-%d-%H%M%S)"
+            echo "::set-output name=imagetag::$(date +%Y-%m-%d-%H%M%S)"
           fi
       - name: log image
         run: |
-         echo ${{ steps.build-image.outputs.imagetag }}
+         echo "${{ steps.image.outputs.imagetag }}"
          echo "working"
