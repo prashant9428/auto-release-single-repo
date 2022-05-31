@@ -56,10 +56,10 @@ jobs:
     steps:
       - name: just logging
         run: |
-          echo "imagetag=$(date +%Y-%m-%d-%H%M%S)" >> $GITHUB_ENV
-          if [ 1 != "" ]; then
-           echo "imagetag=1" >> $GITHUB_ENV
-          fi
+          imagetag=$(date +%Y-%m-%d-%H%M%S)" >> $GITHUB_ENV
+          # if [ 1 != "" ]; then
+          #  echo "imagetag=1" >> $GITHUB_ENV
+          # fi
           echo "${{env.imagetag}}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
