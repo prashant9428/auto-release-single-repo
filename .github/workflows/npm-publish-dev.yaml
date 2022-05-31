@@ -8,6 +8,7 @@ on:
 env:
   AWS_REGION: ap-south-1
   TAG: 0
+  imagetag: 0
   
 jobs:
   semantic-release:
@@ -42,12 +43,12 @@ jobs:
           git add .
           git commit -m"changelog and package.json release[skip ci]
           git push
-          imagetag=$(date +%Y-%m-%d-%H%M%S) 
+          imagetag=$(date +%Y-%m-%d-%H%M%S) >> $GITHUB_ENV
           # checks tag is there or not, if not present picks the current timestamp
           if [ "${{env.TAG}}" != "" ]; then
-           imagetag=${{env.TAG}}
+           imagetag=${{env.TAG}}>> $GITHUB_ENV
           fi
-          echo "image tag name  ${{imagetag}}"
+          echo "image tag name  ${{env.imagetag}}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
