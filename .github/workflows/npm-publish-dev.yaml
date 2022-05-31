@@ -43,12 +43,6 @@ jobs:
           git add .
           git commit -m"changelog and package.json release[skip ci]
           git push
-          imagetag=$(date +%Y-%m-%d-%H%M%S) >> $GITHUB_ENV
-          # checks tag is there or not, if not present picks the current timestamp
-          if [ 1 != "" ]; then
-           imagetag=1 >> $GITHUB_ENV
-          fi
-          echo "image tag name  ${{env.imagetag}}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -62,6 +56,10 @@ jobs:
     steps:
       - name: just logging
         run: |
-            echo "working"
+          imagetag=$(date +%Y-%m-%d-%H%M%S) >> $GITHUB_ENV
+          if [ 1 != "" ]; then
+           imagetag=1 >> $GITHUB_ENV
+          fi
+          echo "${{env.imagetag}}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
