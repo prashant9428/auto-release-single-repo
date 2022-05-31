@@ -55,12 +55,16 @@ jobs:
     environment: development
     steps:
       - name: just logging
+        id: build-image
         run: |
-        
-          echo "imagetag=$(date +%Y-%m-%d-%H%M%S)" >> $GITHUB_ENV
-          # if [ 1 != "" ]; then
-          #  echo "imagetag=1" >> $GITHUB_ENV
-          # fi
-          echo "${{env.imagetag}}"
+          if [ 1 != "" ]; then
+          echo "::set-output image_tag=1.2"
+          else
+          echo "::set-output image_tag=$(date +%Y-%m-%d-%H%M%S)"
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: log image
+        run: |
+         echo "${{steps.build-image.outputs.image_tag}}"
