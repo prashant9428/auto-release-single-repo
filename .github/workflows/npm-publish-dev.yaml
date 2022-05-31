@@ -56,9 +56,9 @@ jobs:
     steps:
       - name: just logging
         run: |
-          imagetag=$(date +%Y-%m-%d-%H%M%S) >> $GITHUB_ENV
+          echo "imagetag=$(date +%Y-%m-%d-%H%M%S)" >> $GITHUB_ENV
           if [ 1 != "" ]; then
-           imagetag=1 >> $GITHUB_ENV
+           echo "imagetag=1" >> $GITHUB_ENV
           fi
           echo "${{env.imagetag}}"
         env:
