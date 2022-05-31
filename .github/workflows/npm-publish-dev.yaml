@@ -9,6 +9,7 @@ env:
   AWS_REGION: ap-south-1
   TAG: 0
   imagetag: 0
+  DEV_MONITOR_ID: 72814581
   
 jobs:
   semantic-release:
@@ -54,6 +55,13 @@ jobs:
     runs-on: ubuntu-latest
     environment: development
     steps:
+      - name: mute the datadog alert monitor
+        run: |
+        curl --location --request POST "https://api.datadoghq.com/api/v1/monitor/${{env.DEV_MONITOR_ID}}/mute" \
+        --header "Content-Type: application/json" \
+        --header "DD-API-KEY: ${{ secrets.DD_API_KEY }}" \
+        --header "DD-APPLICATION-KEY: ${{ secrets.DD_APPLICATION_KEY }}"
+
       - name: just logging
         id: image
         run: |
@@ -66,3 +74,11 @@ jobs:
         run: |
          echo "${{ steps.image.outputs.imagetag }}"
          echo "working"
+
+
+      - name: mute the datadog alert monitor
+        run: |
+        curl --location --request POST "https://api.datadoghq.com/api/v1/monitor/${{env.DEV_MONITOR_ID}}/mute" \
+        --header "Content-Type: application/json" \
+        --header "DD-API-KEY: ${{ secrets.DD_API_KEY }}" \
+        --header "DD-APPLICATION-KEY: ${{ secrets.DD_APPLICATION_KEY }}"
