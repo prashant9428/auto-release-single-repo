@@ -1,7 +1,7 @@
-# yarn --silent auto changelog
-# git add -A
-# git commit -m "chore(release): $VERSION [skip ci]"
-# npm version $VERSION -m "chore(release): %s [skip ci]"
-# git push *** HEAD:main --tags
-# VERSION_NO=`node -pe "require('./package.json').version"`
-auto release --use-version $VERSION_NO
+version=1.1
+echo $version
+if [ "$version" != "" ]; then
+	echo "Num1 and Num2 are zero"
+else
+	echo "$ is lesser than "
+fi

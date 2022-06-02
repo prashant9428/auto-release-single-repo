@@ -7,10 +7,13 @@ on:
 
 env:
   AWS_REGION: ap-south-1
+  TAG: 0
+  imagetag: 0
+  DEV_MONITOR_ID: 72814581
   
 jobs:
-  build:
-    name: semantic release
+  semantic-release:
+    name: semantic_release
     runs-on: ubuntu-latest
     environment: development
     steps:
@@ -33,7 +36,6 @@ jobs:
         run: |
           npm i -g semantic-release
           npm i -g @semantic-release/changelog
-          # npx semantic-release --tag-format='v\\${version}'
           npx semantic-release
 
           git config user.name "${{ secrets.GH_ADMIN_USERNAME }}"
@@ -44,3 +46,40 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+  deployment:
+    if: always()
+    needs:  semantic-release
+    name: deployment
+    runs-on: ubuntu-latest
+    environment: development
+    steps:
+      - name: mute the datadog alert monitor
+        run: |
+          curl --location --request POST 'https://api.datadoghq.com/api/v1/monitor/72814581/mute' \
+          --header 'Content-Type: application/json' \
+          --header 'DD-API-KEY: 6700ef5df73257e4ae6c28153d1b6f07' \
+          --header 'DD-APPLICATION-KEY: 8f3256802462f8cb790078f1a11a7c93c415cbfd'
+
+
+      - name: just logging
+        id: image
+        run: |
+          if [ 1 != "" ]; then
+            echo "::set-output name=imagetag::1.22"
+          else
+            echo "::set-output name=imagetag::$(date +%Y-%m-%d-%H%M%S)"
+          fi
+      - name: log image
+        run: |
+         echo "${{ steps.image.outputs.imagetag }}"
+         echo "working"
+
+
+      # - name: mute the datadog alert monitor
+      #   run: |
+      #   curl --location --request POST "https://api.datadoghq.com/api/v1/monitor/${{env.DEV_MONITOR_ID}}/mute" \
+      #   --header "Content-Type: application/json" \
+      #   --header "DD-API-KEY: ${{ secrets.DD_API_KEY }}" \
+      #   --header "DD-APPLICATION-KEY: ${{ secrets.DD_APPLICATION_KEY }}"

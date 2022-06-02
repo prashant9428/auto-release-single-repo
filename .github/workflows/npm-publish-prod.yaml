@@ -1,9 +1,6 @@
+name: master pipeline
+on: workflow_dispatch
 
-name: dev-ums
-on:
-  push:
-    branches:
-      - main
 
 env:
   AWS_REGION: ap-south-1
