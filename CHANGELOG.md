@@ -1,3 +1,10 @@
+# [1.3.0-beta.19](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.18...v1.3.0-beta.19) (2022-06-10)
+
+
+### Bug Fixes
+
+* added a env in the pipeline ([5abfd53](https://github.com/prashant9428/auto-release-single-repo/commit/5abfd5346f7a0abdc0bc0d6787bcee9a638753b4))
+
 # [1.3.0-beta.17](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.16...v1.3.0-beta.17) (2022-06-02)
 
 
