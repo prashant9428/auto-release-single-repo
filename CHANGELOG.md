@@ -1,3 +1,15 @@
+# [1.3.0-beta.22](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.21...v1.3.0-beta.22) (2022-06-15)
+
+
+### Bug Fixes
+
+* remove unwanted space ([3492d33](https://github.com/prashant9428/auto-release-single-repo/commit/3492d33083d22c33681161e329c10480cd3e06f5))
+
+
+### Features
+
+* fixed user bug ([a7c7b2a](https://github.com/prashant9428/auto-release-single-repo/commit/a7c7b2af998fc809c44a1dc06006436674ed6560))
+
 # [1.3.0-beta.21](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.20...v1.3.0-beta.21) (2022-06-15)
 
 
