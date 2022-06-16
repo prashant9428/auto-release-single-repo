@@ -1,3 +1,10 @@
+# [1.3.0-beta.34](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.33...v1.3.0-beta.34) (2022-06-16)
+
+
+### Bug Fixes
+
+* updated file ([ef360c7](https://github.com/prashant9428/auto-release-single-repo/commit/ef360c7f2bd5d4ee07965908d6a9ccfd2f6b76b4))
+
 # [1.3.0-beta.33](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.32...v1.3.0-beta.33) (2022-06-16)
 
 
