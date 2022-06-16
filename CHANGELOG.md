@@ -1,3 +1,15 @@
+# [1.3.0-beta.24](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.23...v1.3.0-beta.24) (2022-06-16)
+
+
+### Bug Fixes
+
+* added custom user profile ([26f9ee6](https://github.com/prashant9428/auto-release-single-repo/commit/26f9ee63275ec07e6f1b74d71897e844e65e66dc))
+
+
+### Features
+
+* updated user setting ([8d2a309](https://github.com/prashant9428/auto-release-single-repo/commit/8d2a309d78e96a20a372c6158c3c8b906b19eef4))
+
 # [1.3.0-beta.23](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.22...v1.3.0-beta.23) (2022-06-16)
 
 
