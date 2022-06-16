@@ -1,3 +1,11 @@
+# [1.3.0-beta.30](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.29...v1.3.0-beta.30) (2022-06-16)
+
+
+### Bug Fixes
+
+* fixed approle bug ([f6e9dcc](https://github.com/prashant9428/auto-release-single-repo/commit/f6e9dcc7758db9bf73c419faa6c15afc26717803))
+* removed space from index.js ([0dc7901](https://github.com/prashant9428/auto-release-single-repo/commit/0dc790180ce7a2c54c3b6b027dd3cf20279e460c))
+
 # [1.3.0-beta.29](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.28...v1.3.0-beta.29) (2022-06-16)
 
 
