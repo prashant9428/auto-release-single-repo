@@ -1,3 +1,10 @@
+# [1.3.0-beta.32](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.31...v1.3.0-beta.32) (2022-06-16)
+
+
+### Bug Fixes
+
+* fixed the yaml file ([1084d73](https://github.com/prashant9428/auto-release-single-repo/commit/1084d73ddc9786ebdf9c9af9573ac7b413c1c5c6))
+
 # [1.3.0-beta.31](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.30...v1.3.0-beta.31) (2022-06-16)
 
 
