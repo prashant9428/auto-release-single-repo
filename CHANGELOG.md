@@ -1,3 +1,15 @@
+# [1.3.0-beta.23](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.22...v1.3.0-beta.23) (2022-06-16)
+
+
+### Bug Fixes
+
+* added a space in server folder ([0cf5ba2](https://github.com/prashant9428/auto-release-single-repo/commit/0cf5ba27209c278e2574be72f00993ee09f0ceb7))
+
+
+### Features
+
+* added a user setting ([f053b2c](https://github.com/prashant9428/auto-release-single-repo/commit/f053b2cef33799c101e9039c8a6f7e2f8860f02f))
+
 # [1.3.0-beta.22](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.21...v1.3.0-beta.22) (2022-06-15)
 
 
