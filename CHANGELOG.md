@@ -1,3 +1,10 @@
+# [1.3.0-beta.29](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.28...v1.3.0-beta.29) (2022-06-16)
+
+
+### Bug Fixes
+
+* added spce ([f871547](https://github.com/prashant9428/auto-release-single-repo/commit/f871547316b94af39778509d01c25b41ba618596))
+
 # [1.3.0-beta.28](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.27...v1.3.0-beta.28) (2022-06-16)
 
 
