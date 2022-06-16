@@ -1,3 +1,46 @@
+# [1.3.0-beta.30](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.29...v1.3.0-beta.30) (2022-06-16)
+
+
+### Bug Fixes
+
+* fixed approle bug ([f6e9dcc](https://github.com/prashant9428/auto-release-single-repo/commit/f6e9dcc7758db9bf73c419faa6c15afc26717803))
+* removed space from index.js ([0dc7901](https://github.com/prashant9428/auto-release-single-repo/commit/0dc790180ce7a2c54c3b6b027dd3cf20279e460c))
+
+# [1.3.0-beta.29](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.28...v1.3.0-beta.29) (2022-06-16)
+
+
+### Bug Fixes
+
+* added spce ([f871547](https://github.com/prashant9428/auto-release-single-repo/commit/f871547316b94af39778509d01c25b41ba618596))
+
+# [1.3.0-beta.28](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.27...v1.3.0-beta.28) (2022-06-16)
+
+
+### Bug Fixes
+
+* added space ([c97f1ff](https://github.com/prashant9428/auto-release-single-repo/commit/c97f1ff4687c3da01702149279801807597001a0))
+
+# [1.3.0-beta.27](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.26...v1.3.0-beta.27) (2022-06-16)
+
+
+### Bug Fixes
+
+* removed space ([2ee15f1](https://github.com/prashant9428/auto-release-single-repo/commit/2ee15f1029f028104e89e316e0888a6136b59fcd))
+
+# [1.3.0-beta.26](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.25...v1.3.0-beta.26) (2022-06-16)
+
+
+### Bug Fixes
+
+* added space ([f2a50e3](https://github.com/prashant9428/auto-release-single-repo/commit/f2a50e32be4620b0598afef38ad42be45608055d))
+
+# [1.3.0-beta.25](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.24...v1.3.0-beta.25) (2022-06-16)
+
+
+### Bug Fixes
+
+* added a space ([4aad367](https://github.com/prashant9428/auto-release-single-repo/commit/4aad367b02e46792b504e8071b727705bbc53942))
+
 # [1.3.0-beta.24](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.23...v1.3.0-beta.24) (2022-06-16)
 
 
