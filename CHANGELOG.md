@@ -1,3 +1,10 @@
+# [1.3.0-beta.37](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.36...v1.3.0-beta.37) (2022-06-20)
+
+
+### Bug Fixes
+
+* added space ([5e3834e](https://github.com/prashant9428/auto-release-single-repo/commit/5e3834e779bb797ce73ab67bc374b5233e3c8364))
+
 # [1.3.0-beta.36](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.35...v1.3.0-beta.36) (2022-06-17)
 
 
