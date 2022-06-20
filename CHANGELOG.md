@@ -1,3 +1,12 @@
+# [1.3.0-beta.38](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.37...v1.3.0-beta.38) (2022-06-20)
+
+
+### Bug Fixes
+
+* check notification ([33fc532](https://github.com/prashant9428/auto-release-single-repo/commit/33fc532e8e218c53ec473ef6d202730ceab6449c))
+* pipeline ([c52548a](https://github.com/prashant9428/auto-release-single-repo/commit/c52548a9f92382a67ddd0d9e142971826ff9cdef))
+* uncommented the pipeline ([1b0dc3a](https://github.com/prashant9428/auto-release-single-repo/commit/1b0dc3ab071ea9d28d8a2c08de3d86cee5f1cb4f))
+
 # [1.3.0-beta.37](https://github.com/prashant9428/auto-release-single-repo/compare/v1.3.0-beta.36...v1.3.0-beta.37) (2022-06-20)
 
 
