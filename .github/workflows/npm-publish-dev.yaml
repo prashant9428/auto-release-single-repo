@@ -35,7 +35,7 @@ jobs:
       - name: create a release
         run: |
           npm i -g semantic-release
-          npm i -g @semantic-release/changelog
+          #npm i -g @semantic-release/changelog
           npx semantic-release
 
           git config user.name "${{ secrets.GH_ADMIN_USERNAME }}"
